@@ -1,5 +1,11 @@
 # Sample App 
 
+
+Load images in micok8s registry
+
+microk8s ctr image import react-express-mongodb-backend.tar
+microk8s ctr image import react-express-mongodb-frontend.tar
+
 Source [https://github.com/docker/awesome-compose/tree/master/react-express-mongodb](https://github.com/docker/awesome-compose/tree/master/react-express-mongodb)
 
 ### React application with a NodeJS backend and a MongoDB database
