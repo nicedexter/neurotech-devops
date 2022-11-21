@@ -1,7 +1,7 @@
 # Sample App 
 
 
-Load images in micok8s registry
+Load images in microk8s registry
 
 microk8s ctr image import react-express-mongodb-backend.tar
 microk8s ctr image import react-express-mongodb-frontend.tar
