@@ -1,0 +1,19 @@
+mongo:
+  image:
+    name: mongo
+    version: 4.2.0
+  storage:
+    storage0:
+      guest_path: /data/db
+      host_path: /home/ubuntu/data
+
+backend:
+  image:
+    name: react-express-mongodb-backend
+    version: latest
+
+frontend:
+  image:
+    name: react-express-mongodb-frontend
+    version: latest
+  external_ip: 185.19.29.150
