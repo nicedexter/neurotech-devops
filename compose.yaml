@@ -8,8 +8,9 @@ services:
     image: react-express-mongodb-backend
     depends_on:
       - mongo
-    expose: 
+    expose:
       - 3000
+  
   mongo:
     image: mongo:4.2.0
     volumes:
