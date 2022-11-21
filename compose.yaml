@@ -3,34 +3,16 @@ services:
     image: react-express-mongodb-frontend
     ports:
       - 3000:3000
-    container_name: frontend
-    restart: always
-    networks:
-      - react-express
-    depends_on:
-      - backend
 
   backend:
-    container_name: backend
-    restart: always
     image: react-express-mongodb-backend
     depends_on:
       - mongo
-    networks:
-      - express-mongo
-      - react-express
     expose: 
       - 3000
   mongo:
-    container_name: mongo
-    restart: always
     image: mongo:4.2.0
     volumes:
       - ./data:/data/db
-    networks:
-      - express-mongo
     expose:
       - 27017
-networks:
-  react-express:
-  express-mongo:
